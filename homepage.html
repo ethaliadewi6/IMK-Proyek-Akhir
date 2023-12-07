@@ -1,0 +1,262 @@
+<t name="Homepage" t-name="website.homepage">
+    <t t-call="website.layout">
+        <t t-set="pageName" t-value="'homepage'"/>
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_title parallax s_parallax_is_fixed o_colored_level pt0 pb24 oe_img_bg o_bg_img_center" data-snippet="s_embed_code" data-name="Custom Custom Embed Code" style="background-color: rgb(46, 49, 56); background-image: url(&quot;/unsplash/Qiy4hr18aGs/blue%20swirl.jpg?unique=c9b4dc61&quot;);">
+        <div class="s_embed_code_embedded o_not_editable container-fluid"><style class="o_default_snippet_text">
+
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--bg: #e3e4e8;
+	--fg: #17181c;
+	--input: #ffffff;
+	--primary: #255ff4;
+	--dur: 1s;
+	font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1280 - 320));
+}
+body, input {
+	color: #ffffff;
+	font: 1em/1.5 Hind, sans-serif;
+}
+body {
+	background: var(--bg);
+	display: flex;
+	height: 100vh;
+}
+form, input, .caret {
+	margin: auto;
+}
+form {
+	position: relative;
+	width: 100%;
+	max-width: 17em;
+  margin-top: 2em;
+}
+input, .caret {
+	display: block;
+	transition: all calc(var(--dur) * 0.5) linear;
+}
+input {
+	background: transparent;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.25em inset;
+	caret-color: var(--primary);
+	width: 2em;
+	height: 2em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input:focus, input:valid {
+	background: var(--input);
+	border-radius: 0.25em;
+	box-shadow: none;
+	padding: 0.75em 1em;
+	transition-duration: calc(var(--dur) * 0.25);
+	transition-delay: calc(var(--dur) * 0.25);
+	width: 100%;
+	height: 3em;
+}
+input:focus {
+	animation: showCaret var(--dur) steps(1);
+	outline: transparent;
+}
+input:focus + .caret, input:valid + .caret {
+	animation: handleToCaret var(--dur) linear;
+	background: transparent;
+	width: 1px;
+	height: 1.5em;
+	transform: translate(0,-1em) rotate(-180deg) translate(7.5em,-0.25em);
+}
+input::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+label {
+	color: #e3e4e8;
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.caret {
+	background: currentColor;
+	border-radius: 0 0 0.125em 0.125em;
+	margin-bottom: -0.6em;
+	width: 0.25em;
+	height: 1em;
+	transform: translate(0,-1em) rotate(-45deg) translate(0,0.875em);
+	transform-origin: 50% 0;
+}
+
+@media (prefers-color-scheme: dark) {	
+	:root {
+		--bg: #17181c;
+		--fg: #e3e4e8;
+		--input: #2e3138;
+		--primary: #5583f6;
+	}
+}
+
+@keyframes showCaret {
+	from {
+		caret-color: transparent;
+	}
+	to {
+		caret-color: var(--primary);
+	}
+}
+@keyframes handleToCaret {
+	from {
+		background: currentColor;
+		width: 0.25em;
+		height: 1em;
+		transform: translate(0,-1em) rotate(-45deg) translate(0,0.875em);
+	}
+	25% {
+		background: currentColor;
+		width: 0.25em;
+		height: 1em;
+		transform: translate(0,-1em) rotate(-180deg) translate(0,0.875em);
+	}
+	50%, 62.5% {
+		background: var(--primary);
+		width: 1px;
+		height: 1.5em;
+		transform: translate(0,-1em) rotate(-180deg) translate(7.5em,2.5em);
+	}
+	75%, 99% {
+		background: var(--primary);
+		width: 1px;
+		height: 1.5em;
+		transform: translate(0,-1em) rotate(-180deg) translate(7.5em,-0.25em);
+	}
+	87.5% {
+		background: var(--primary);
+		width: 1px;
+		height: 1.5em;
+		transform: translate(0,-1em) rotate(-180deg) translate(7.5em,0.125em);
+	}
+	to {
+		background: transparent;
+		width: 1px;
+		height: 1.5em;
+		transform: translate(0,-1em) rotate(-180deg) translate(7.5em,-0.25em);
+	}
+}
+    </style>
+    <form id="searchForm" action="https://lookagadgetcom1.odoo.com/search" method="get" abframeid="iframe.0.1882278635490533" abineguid="587E92EB6DC2431282C653CBA9973B0A">
+              <label for="search" class="o_default_snippet_text">Search</label><input id="search" type="search" pattern=".*\S.*" required=""/>
+              <span class="caret"/>
+          </form>
+          </div>
+          <script>
+    function handleSearchSubmit(event) {
+    event.preventDefault(); // Mencegah perilaku bawaan formulir
+    var inputValue = document.getElementById('search').value;
+    window.location.href = '/search#search-bar + encodeURIComponent(inputValue);
+}
+</script>
+    </section>
+        <section class="s_title o_cc o_cc5 o_colored_level pt0 pb0 s_parallax_no_overflow_hidden" data-vcss="001" data-scroll-background-ratio="0" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        
+        
+        <div class="s_allow_columns container">
+            
+       <div class="row">
+    <div class="o_colored_level col-lg-12" style="text-align: center;">
+        <p>
+            
+        </p>
+        <span class="s_badge badge text-bg-secondary o_animable" href="link-untuk-smartphones" data-name="Badge" data-snippet="s_badge" style="background-color: rgb(107, 173, 222) !important;"><a href="/smarthphones" data-bs-original-title="" title=""><font class="text-o-color-2">​Smarthphones</font></a></span>
+<font class="text-o-color-5">​</font><span class="s_badge badge text-bg-secondary o_animable" data-name="Badge" data-snippet="s_badge" style="background-color: rgb(107, 173, 222) !important;"><a href="/tablets" data-bs-original-title="" title=""><font class="text-o-color-5">​Tablets</font></a>
+        </span>
+        <span class="s_badge badge text-bg-secondary o_animable" data-name="Badge" data-snippet="s_badge" style="background-color: rgb(107, 173, 222) !important;">
+            <a href="/smart-watches" data-bs-original-title="" title=""><font class="text-o-color-5">Smart-Watches</font></a>
+        </span>
+        <span class="s_badge badge text-bg-secondary o_animable" data-name="Badge" data-snippet="s_badge" style="background-color: rgb(107, 173, 222) !important;">
+            <a href="/tvs" data-bs-original-title="" title=""><font class="text-black">​Tvs​</font></a>
+        </span><span class="s_badge badge text-bg-secondary o_animable" data-name="Badge" data-snippet="s_badge" style="background-color: rgb(107, 173, 222) !important;">
+        <a href="/others" data-bs-original-title="" title=""><font class="text-o-color-5">​Others</font></a></span><h2 class="display-3-fs" style="text-align: center;">NEW</h2></div></div></div>
+    </section><section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_cc o_cc5 o_colored_level pt0 s_image_gallery_cover" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
+        <div class="container-fluid">
+            <div id="slideshow_1701828272304" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0" style="margin: 0 12px;">
+                <div class="carousel-inner" style="padding: 0;">
+                    <div class="carousel-item" style="">
+                        <img src="/web/image/263-8d3471a5/iphone15pro1.webp" alt="" class="img img-fluid d-block o_we_custom_image" data-mimetype="image/webp" data-original-id="259" data-original-src="/web/image/259-b7242fbd/iphone15pro1.png" data-mimetype-before-conversion="image/png" data-resize-width="962" loading="lazy"/>
+                    </div>
+                    <div class="carousel-item" style="">
+                        <img src="/web/image/437-e81ec603/redminote12pro1.webp" alt="" class="img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/webp" data-original-id="436" data-original-src="/web/image/436-a5dcb4e8/redminote12pro1.png" data-mimetype-before-conversion="image/png" data-resize-width="962" loading="lazy"/>
+                    </div>
+                    <div class="carousel-item active" style="">
+                        <img src="/web/image/439-44cbcd3a/samsungs23ultra3.webp" alt="" class="img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/webp" data-original-id="438" data-original-src="/web/image/438-26a48b67/samsungs23ultra3.png" data-mimetype-before-conversion="image/png" data-resize-width="962" loading="lazy"/>
+                    </div>
+                </div>
+                <ul class="carousel-indicators"><li class="o_indicators_left text-center d-none" aria-label="Previous" title="Previous">
+                        <i class="oi oi-chevron-left">​</i>
+                    </li>
+                    
+                    <li data-bs-target="#slideshow_1701828272304" data-bs-slide-to="0" style="background-image: url(&quot;/web/image/259-b7242fbd/iphone15pro1.png&quot;);"/>
+                    <li data-bs-target="#slideshow_1701828272304" data-bs-slide-to="1" style="background-image: url(&quot;/web/image/436-a5dcb4e8/redminote12pro1.png&quot;);"/>
+                    <li data-bs-target="#slideshow_1701828272304" data-bs-slide-to="2" style="background-image: url(&quot;/web/image/438-26a48b67/samsungs23ultra3.png&quot;);" class="active" aria-current="true"/>
+                    
+                <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next">
+                        <i class="oi oi-chevron-right">​</i>
+                    </li></ul>
+                <a class="carousel-control-prev o_we_no_overlay o_not_editable" href="#slideshow_1701828272304" data-bs-slide="prev" aria-label="Previous" title="Previous">
+                    <span class="oi oi-chevron-left fa-2x text-white"/>
+                    <span class="visually-hidden o_default_snippet_text">Previous</span>
+                </a>
+                <a class="carousel-control-next o_we_no_overlay o_not_editable" href="#slideshow_1701828272304" data-bs-slide="next" aria-label="Next" title="Next">
+                    <span class="oi oi-chevron-right fa-2x text-white"/>
+                    <span class="visually-hidden o_default_snippet_text">Next</span>
+                </a>
+            </div>
+        </div>
+    </section><section class="s_title parallax s_parallax_is_fixed o_cc o_cc5 o_colored_level pt0 pb0" data-vcss="001" data-scroll-background-ratio="1" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image');"/>
+        <div class="o_we_bg_filter" style="background-color: rgba(17, 13, 22, 0.85) !important;"/>
+        <div class="container s_allow_columns">
+            <h2 class="display-3-fs" style="text-align: center;">HOT PRODUCTS</h2>
+        </div>
+    </section><section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_cc o_cc5 o_colored_level pt0 o_full_screen_height s_image_gallery_cover" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
+        <div class="container-fluid">
+            <div id="slideshow_1701859889664" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0" style="margin: 0 12px;">
+                <div class="carousel-inner" style="padding: 0;">
+                    <div class="carousel-item" style="">
+                        <img src="/web/image/263-8d3471a5/iphone15pro1.webp" alt="" class="img img-fluid d-block o_we_custom_image" data-mimetype="image/webp" data-original-id="259" data-original-src="/web/image/259-b7242fbd/iphone15pro1.png" data-mimetype-before-conversion="image/png" data-resize-width="962" loading="lazy"/>
+                    </div>
+                    <div class="carousel-item active" style="">
+                        <img src="/web/image/286-3eb157b7/image-removebg-preview.webp" alt="" class="img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/webp" data-original-id="268" data-original-src="/web/image/268-30bdcac5/image-removebg-preview.png" data-mimetype-before-conversion="image/png" data-resize-width="225" style="padding: 55px; width: 50% !important;" loading="lazy"/>
+                    </div>
+                    <div class="carousel-item" style="">
+                        <img src="/web/image/450-386efcec/images.webp" alt="" class="img img-fluid o_we_custom_image mx-auto d-block" data-mimetype="image/webp" data-original-id="449" data-original-src="/web/image/449-386efcec/images.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="299" data-quality="100" loading="lazy"/>
+                    </div>
+                </div>
+                <ul class="carousel-indicators"><li class="o_indicators_left text-center d-none" aria-label="Previous" title="Previous">
+                        <i class="oi oi-chevron-left">​</i>
+                    </li>
+                    
+                    <li data-bs-target="#slideshow_1701859889664" data-bs-slide-to="0" style="background-image: url(&quot;/web/image/259-b7242fbd/iphone15pro1.png&quot;);"/>
+                    <li data-bs-target="#slideshow_1701859889664" data-bs-slide-to="1" style="background-image: url(&quot;/web/image/268-30bdcac5/image-removebg-preview.png&quot;);" class="active" aria-current="true"/>
+                    <li data-bs-target="#slideshow_1701859889664" data-bs-slide-to="2" style="background-image: url(&quot;/web/image/449-386efcec/images.jpeg&quot;);"/>
+                    
+                <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next">
+                        <i class="oi oi-chevron-right">​</i>
+                    </li></ul>
+                <a class="carousel-control-prev o_we_no_overlay o_not_editable" href="#slideshow_1701859889664" data-bs-slide="prev" aria-label="Previous" title="Previous">
+                    <span class="oi oi-chevron-left fa-2x text-white"/>
+                    <span class="visually-hidden o_default_snippet_text">Previous</span>
+                </a>
+                <a class="carousel-control-next o_we_no_overlay o_not_editable" href="#slideshow_1701859889664" data-bs-slide="next" aria-label="Next" title="Next">
+                    <span class="oi oi-chevron-right fa-2x text-white"/>
+                    <span class="visually-hidden o_default_snippet_text">Next</span>
+                </a>
+            </div>
+        </div>
+    </section></div>
+    </t>
+</t>

@@ -1,0 +1,5 @@
+<data inherit_id="website_sale.header_cart_link" name="Header Hide Empty Cart link" active="False">
+    <xpath expr="//t[@t-set='show_cart']" position="after">
+        <t t-set="show_cart" t-value="website_sale_cart_quantity"/>
+    </xpath>
+</data>

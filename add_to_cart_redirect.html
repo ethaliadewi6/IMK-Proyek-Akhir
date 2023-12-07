@@ -1,0 +1,5 @@
+<data inherit_id="website.layout" name="Cart Redirection" priority="1">
+    <xpath expr="//html" position="before">
+        <t t-set="html_data" t-value="dict(html_data, **{'data-add2cart-redirect': '1' if website.add_to_cart_action == 'stay' else '0' if website.add_to_cart_action == 'go_to_cart' else '2'})"/>
+    </xpath>
+</data>
